@@ -5,8 +5,9 @@ Se despliega un contenedor con la imagen de ONOS.
 Se activan las aplicaciones para permitir el forwarding de mininet reactivo.
 Se genera una topologia con mininet.
 ~~~
-./onos_docker.sh 
+sudo ./onos_docker.sh 
 ~~~
+Se preguntará por la contraseñ del usuario "karaf para poder acceder a la consola de configuración de onos para activar las aplicaciones. karaf/karaf
 
 ## TRex
 Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es neecesario realizarlo siempre)
@@ -22,8 +23,8 @@ docker run --rm -it --privileged --name trex --cap-add=ALL trex:20.04
 
 ## Configurar enlaces
 ~~~
-sudo ovs-docker add-port s1 veth0 trex --ipaddress=10.0.1.1/24
-sudo ovs-docker add-port s1 veth1 trex --ipaddress=10.0.2.1/24
+sudo ovs-docker add-port s1 veth0 trex --ipaddress=10.0.0.11/30
+sudo ovs-docker add-port s1 veth1 trex --ipaddress=10.0.0.12/30
 ~~~
 
 ## Servicio TRex
