@@ -10,5 +10,4 @@ sleep 10
 ssh -p 8101 karaf@172.17.0.2 "app activate org.onosproject.openflow org.onosproject.fwd"
 
 
-cd SDN-ATTACK
 sudo mn --custom Topology3.py --topo mitopologia --controller=remote,ip=172.17.0.2,port=6633
