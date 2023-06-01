@@ -28,7 +28,7 @@ sudo ovs-docker add-port s1 veth1 trex --ipaddress=10.0.0.12/30
 ~~~
 
 ## Servicio TRex
-Para cceder al contenedor 
+Para acceder al contenedor 
 ~~~
 docker exec -it trex bash
 ~~~
