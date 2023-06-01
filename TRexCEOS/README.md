@@ -3,12 +3,12 @@
 ## TRex
 Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es neecesario realizarlo siempre)
 ~~~
-docker build -t trex:20.04 .
+docker build -t trexceos:20.04 .
 ~~~
 
 Se monta el contenedor con la imagen generada
 ~~~
-docker run --rm -it --privileged --name trex --cap-add=ALL trex:20.04
+docker run --rm -it --privileged --name trexceos --cap-add=ALL trexceos:20.04
 ~~~
 ## Se despliega un Router Arista cEOS
 
@@ -27,8 +27,13 @@ Para importar el archivo con docker:
 docker import cEOS64-lab-4.29.0.2F.tar.tar ceos:4.29.0.2F
 ~~~
 
+Una vez se tiene la imagen, para desplegar el contenedor:
+~~~
+docker create --name=ceos -i -t ceos:4.29.0.2F /sbin/init 
+~~~
+
 ## Conexión 
 Hay que configurar los interfaces dentro del router cEOS, para ello hay que entrar dentro de su interfaz de configuración 
 ~~~
-
+./conexion.sh
 ~~~
