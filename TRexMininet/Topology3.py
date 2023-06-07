@@ -29,7 +29,7 @@ def myNetwork():
         build=False,
         host=CPULimitedHost,#new
         link=TCLink,#new
-        ipBase='10.0.0.0/8')
+        ipBase='10.0.0.0/24')
     net.addController("c0", controller=RemoteController,
                       ip='IP CONTROLLER',
                       protocol='tcp',
