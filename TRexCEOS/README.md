@@ -63,5 +63,5 @@ exit
 ~~~
 
 
-## Configuración TREx
+## Configuración TRex
 
