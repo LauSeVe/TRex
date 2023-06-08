@@ -32,13 +32,15 @@ Una vez se tiene la imagen, para desplegar el contenedor:
 docker create --name=ceos --privileged -e INTFTYPE=eth -e ETBA=1 -e SKIP_ZEROTOUCH_BARRIER_IN_SYSDBINIT=1 -e CEOS=1 -e EOS_PLATFORM=ceoslab -e container=docker -i -t ceos:4.29.0.2F /sbin/init systemd.setenv=INTFTYPE=eth systemd.setenv=ETBA=1 systemd.setenv=SKIP_ZEROTOUCH_BARRIER_IN_SYSDBINIT=1 systemd.setenv=CEOS=1 systemd.setenv=EOS_PLATFORM=ceoslab systemd.setenv=container=docker
 ~~~
 
-## Conexión 
-Hay que configurar los interfaces dentro del router cEOS, para ello hay que entrar dentro de su interfaz de configuración 
+
+## Configuración con cEOS 
+TO DO
+
+Para iniciarlo
 ~~~
-./conexion.sh
+docker start ceos
 ~~~
 
-## Configuración cEOS
 Para entrar en el Cli
 ~~~
 docker exec -it ceos Cli
@@ -52,16 +54,22 @@ hostn ceos
 ip routing
 interface Ethernet1
 no switchport
-ip addr 10.0.1.2/30
+ip addr 10.0.1.2/24
 do wr
 exit
 interface Ethernet2
 no switchport
-ip addr 10.0.2.2/30
+ip addr 10.0.2.2/24
 do wr
 exit
 ~~~
 
 
-## Configuración TRex
+## Conexión 
+TO DO
+Hay que configurar los interfaces dentro del router cEOS, para ello hay que entrar dentro de su interfaz de configuración 
+~~~
+./conexion.sh
+~~~
+
 
