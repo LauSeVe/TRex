@@ -29,7 +29,6 @@ Si se quieren utilizar herramientas basicas hay que instalarlas:
 ~~~
 apt update
 apt install net-tools iputils-ping tcpdump
-
 ~~~
 Así ya se podrá hacer ifconfig y ping para comprobar los insterfaces creados.  
 
@@ -57,17 +56,33 @@ Para acceder a la consula de TRex, en otro terminal realizar el siguiente comand
 ./trex-console
 ~~~
 
-# Para lanzar una pueba basica astf de trafico http
-
+## Para lanzar una pueba basica astf de trafico http
 ~~~
 start -f astf/http_simple.py -m 1000 -d 1000 -l 1000
 ~~~
 https://trex-tgn.cisco.com/trex/doc/trex_astf.html
 
-### Comprobación de trafico 
-Para observar una interfaz 
+
+### Rutas estaticas
+En el TRex:
+Añadir la ruta de los servidores
+~~~
+ip route add 48.0.0.0/16 via 10.0.1.2
+~~~
+Añadir la ruta de los clientes
+~~~
+ip route add 16.0.0.0/24 via 10.0.2.2
+~~~
+
+En el Ubuntu:
+~~~
 
 ~~~
-sudo tcpdump -i veth2 -w capture.pcap &
+
+### Comprobación de trafico 
+Para observar una interfaz y guardarlo en un ficher pcap
+
+~~~
+sudo tcpdump -i veth0 -w capture.pcap &
 tcpdump -r capture.pcap
 ~~~ 
