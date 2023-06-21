@@ -9,3 +9,6 @@ En este escenario se despliega TRex conectado a un router Arista cEOS.
 
 ## TRexMininet
 En este escenario se despliega TRex conectado a una topologia mininet SDN con ONOS como controlador  
+
+## TRexInMininet
+En este escenario se despliega TRex dentro de un host de una topologia mininet SDN con ONOS como controlador  
