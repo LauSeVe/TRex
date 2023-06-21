@@ -6,6 +6,6 @@ rm -r v3.02
 rm v3.02.tar.gz 
 
 ## ONOS
-docekr rm -f onos
+docker rm -f onos
 
 
