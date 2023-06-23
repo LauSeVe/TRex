@@ -21,3 +21,38 @@ sudo ovs-vsctl add-br switch
 sudo ovs-docker add-port switch veth0 trexovs --ipaddress=1.1.1.1/24
 sudo ovs-docker add-port switch veth1 trexovs --ipaddress=2.2.2.2/24
 ~~~
+
+
+## Prueba 
+Para acceder al contenedor 
+~~~
+docker exec -it trexovs bash
+~~~
+
+Se habilita el servicio del TRex para esto hay que ejecutar el siguiente comando dentro del contenedor TRex
+~~~
+./t-rex-64 -i --astf
+~~~
+Para esto tiene que estar actualizado python3.
+
+Para acceder a la consola de TRex, en otro terminal realizar el siguiente comando dentro del contenedor
+~~~
+./trex-console
+~~~
+Dentro de la consola se puede lanzar trafico http basico
+~~~
+start -f astf/http_simple.py 
+~~~
+La consola tambien tiene incluido un interfaz que enseña estadisticas
+~~~
+tui
+~~~
+Para parar el trafico hay que ejecutar el comando
+~~~
+stop
+~~~
+
+Si se quiere comprobar el correcto funcionamiento se puede realizar un tcpdump en cualquiera de los interfaces del TRex
+~~~
+tcpdump -i veth0
+~~~
