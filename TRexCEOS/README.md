@@ -1,5 +1,5 @@
 # TRex con Arista Ceos
-
+TODO
 ## TRex
 Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es neecesario realizarlo siempre)
 ~~~
