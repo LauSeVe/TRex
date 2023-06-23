@@ -13,3 +13,7 @@ En este escenario se despliega TRex conectado a una topologia mininet SDN con ON
 
 ## TRexInMininet
 En este escenario se despliega TRex dentro de un host de una topologia mininet SDN con ONOS como controlador  
+
+## TRexUbuntu
+TODO
+En este escenario se desplega TRex conectado a un contenedor con Ubuntu 20.04. 

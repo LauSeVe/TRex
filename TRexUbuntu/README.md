@@ -1,4 +1,5 @@
 # TRex con Ubuntu 20.04
+TODO
 Este escenario se ha desplegado para probar la generación de paquetes con TRex con 3 subredes distintas para investigar el funcionamiento de ARP con el generador de trafico TRex de CISCO. 
 
 ## Configuracion
@@ -58,7 +59,7 @@ Para acceder a la consula de TRex, en otro terminal realizar el siguiente comand
 
 ## Para lanzar una pueba basica astf de trafico http
 ~~~
-start -f astf/http_simple.py -m 1000 -d 1000 -l 1000
+start -f astf/http_simple.py 
 ~~~
 https://trex-tgn.cisco.com/trex/doc/trex_astf.html
 
@@ -80,7 +81,7 @@ En el Ubuntu:
 ~~~
 
 ### Comprobación de trafico 
-Para observar una interfaz y guardarlo en un ficher pcap
+Para observar una interfaz y guardarlo en un fichero pcap
 
 ~~~
 sudo tcpdump -i veth0 -w capture.pcap &
