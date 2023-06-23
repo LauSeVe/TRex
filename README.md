@@ -4,7 +4,8 @@ En este repositorio se pueden ver tres escinarios en los que se utiliza el gener
 ## TRexOVS
 En este escenario se desplega TRex conectado a un switch OVS.
 
-## TRexCEOS
+## TRexCEOS 
+TODO
 En este escenario se despliega TRex conectado a un router Arista cEOS.
 
 ## TRexMininet
