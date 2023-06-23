@@ -4,7 +4,7 @@
   interfaces    : ["veth0", "veth1"]   # list of the interfaces to bind run ./dpdk_nic_bind.py --status 
   port_info     :  # set eh mac addr 
  
-                 - ip         : 1.1.1.1
-                   default_gw : 2.2.2.2
-                 - ip         : 2.2.2.2
-                   default_gw : 1.1.1.1 
+                 - ip         : 3.3.3.3
+                   default_gw : 4.4.4.4
+                 - ip         : 4.4.4.4
+                   default_gw : 3.3.3.3 

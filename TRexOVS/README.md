@@ -1,4 +1,4 @@
-# TRex con Arista Ceos
+# TRex con OVS
 
 ## TRex
 Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre)
@@ -8,7 +8,7 @@ docker build -t trexovs:20.04 .
 
 Se monta el contenedor con la imagen generada
 ~~~
-docker run --rm -it --privileged --name trexovs --cap-add=ALL trexovs:20.04
+docker run --privileged --cap-add=ALL -v /mnt/huge:/mnt/huge -v /lib/modules:/lib/modules:ro -v /sys/bus/pci/devices:/sys/bus/pci/devices -v /sys/devices/system/node:/sys/devices/system/node -v /dev:/dev -it --name trexovs trexovs:20.04
 ~~~
 
 ## Se despliega un OVS

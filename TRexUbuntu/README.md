@@ -16,7 +16,7 @@ docker run --rm -it --privileged --name trexubuntu --cap-add=ALL trexubuntu:20.0
 ### Ubuntu 20.04
 Para desplegar un contenedor con una imagen de ubuntu 20.04.
 ~~~
-docker run -it --name ubuntu ubuntu:20.04
+docker run --privileged --cap-add=ALL -v /mnt/huge:/mnt/huge -v /lib/modules:/lib/modules:ro -v /sys/bus/pci/devices:/sys/bus/pci/devices -v /sys/devices/system/node:/sys/devices/system/node -v /dev:/dev -it --name trexubuntu trexubuntu:20.04
 ~~~
 
 ### Configuración con Ubuntu
