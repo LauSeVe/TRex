@@ -17,7 +17,8 @@ docker build -t trex:20.04 .
 
 Se monta el contenedor con la imagen generada
 ~~~
-docker run --rm -it --privileged --name trex --cap-add=ALL trex:20.04
+docker run --privileged --cap-add=ALL -v /mnt/huge:/mnt/huge -v /lib/modules:/lib/modules:ro -v /sys/bus/pci/devices:/sys/bus/pci/devices -v /sys/devices/system/node:/sys/devices/system/node -v /dev:/dev -it --name trex trex:20.04
+
 ~~~
 
 
