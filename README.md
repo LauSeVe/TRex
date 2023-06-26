@@ -4,10 +4,6 @@ En este repositorio se pueden ver tres escinarios en los que se utiliza el gener
 ## TRexOVS
 En este escenario se desplega TRex conectado a un switch OVS.
 
-## TRexCEOS 
-TODO
-En este escenario se despliega TRex conectado a un router Arista cEOS.
-
 ## TRexMininet
 En este escenario se despliega TRex conectado a una topologia mininet SDN con ONOS como controlador  
 
@@ -15,5 +11,4 @@ En este escenario se despliega TRex conectado a una topologia mininet SDN con ON
 En este escenario se despliega TRex dentro de un host de una topologia mininet SDN con ONOS como controlador  
 
 ## TRexUbuntu
-TODO
 En este escenario se desplega TRex conectado a un contenedor con Ubuntu 20.04. 
