@@ -5,6 +5,6 @@
   port_info     :  # set eh mac addr 
  
                  - ip         : 1.1.1.1
-                   default_gw : 2.2.2.2
-                 - ip         : 2.2.2.2
+                   default_gw : 1.1.1.2
+                 - ip         : 1.1.1.2
                    default_gw : 1.1.1.1 

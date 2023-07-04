@@ -19,7 +19,7 @@ sudo ovs-vsctl add-br switch
 ## Conexión 
 ~~~
 sudo ovs-docker add-port switch veth0 trexovs --ipaddress=1.1.1.1/24
-sudo ovs-docker add-port switch veth1 trexovs --ipaddress=2.2.2.2/24
+sudo ovs-docker add-port switch veth1 trexovs --ipaddress=1.1.1.2/24
 ~~~
 
 
