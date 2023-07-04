@@ -1,14 +1,13 @@
 # TRex 
-En este repositorio se pueden ver tres escinarios en los que se utiliza el generador de trafico TRex de CISCO.
+En este repositorio se pueden ver varios escenarios en los que se utiliza el generador de tráfico TRex de CISCO.
 
 ## TRexOVS
-En este escenario se desplega TRex conectado a un switch OVS.
+En esta carpeta se puede encontrar un escenario el cual despliega un contenedor TRex v3.02 conectado a un switch OVS.
 
 ## TRexMininet
-En este escenario se despliega TRex conectado a una topologia mininet SDN con ONOS como controlador  
-
-## TRexInMininet
-En este escenario se despliega TRex dentro de un host de una topologia mininet SDN con ONOS como controlador  
+En esta carpeta se encuentran varios escenarios en los que se despliega TRex a distintas topologias mininet SDN con ONOS como controlador. 
+En ella se verá el despliegue del servicio de Trex en un host generado desde mininet, así como su despliegue en un contenedor unico con varios interfaces o el despliegue de varios contenedores Trex. 
 
 ## TRexUbuntu
-En este escenario se desplega TRex conectado a un contenedor con Ubuntu 20.04. 
+En esta carpeta se podrá encontrar un escenario en el que se desplega TRex conectado a un contenedor con Ubuntu 20.04. 
+Este escenario se ha generado para comprobar el correcto funcionamiento de TRex a través de varias subredes. 

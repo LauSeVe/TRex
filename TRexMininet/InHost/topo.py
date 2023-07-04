@@ -17,9 +17,9 @@ def myNetwork():
         topo=None,
         controller=RemoteController,
         build=False,
-        host=CPULimitedHost,#new
-        link=TCLink,#new
-        ipBase='10.0.0.0/8')
+        host=CPULimitedHost,
+        link=TCLink,
+        ipBase='10.0.0.0/24')
     net.addController("c0", controller=RemoteController,
                       ip='IP CONTROLLER',
                       protocol='tcp',
@@ -38,8 +38,8 @@ class MiTopologia(Topo):
         trex = self.addHost('trex', cls=Host, ip='10.0.0.1', defaultRoute=None)
 
         info( '*** Add links\n')
-        self.addLink(trex, s1, cls=TCLink, bw=5, params1={'ip':'10.0.0.1/8'})
-        self.addLink(trex, s1, cls=TCLink, bw=5, params1={'ip':'10.0.0.2/8'})
+        self.addLink(trex, s1, cls=TCLink, bw=5, params1={'ip':'10.0.0.1/24'})
+        self.addLink(trex, s1, cls=TCLink, bw=5, params1={'ip':'10.0.0.2/24'})
 
 
 def test_untagged(self):
