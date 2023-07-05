@@ -1,0 +1,21 @@
+services:
+    trexbasic:
+        privileged: true
+        volumes:
+            - '/mnt/huge:/mnt/huge'
+            - '/lib/modules:/lib/modules:ro'
+            - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+            - '/sys/devices/system/node:/sys/devices/system/node' 
+            - '/dev:/dev'
+        container_name: trex1
+        image: trexbasic:20.04
+    trexbasic2:
+        privileged: true
+        volumes:
+            - '/mnt/huge:/mnt/huge'
+            - '/lib/modules:/lib/modules:ro'
+            - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+            - '/sys/devices/system/node:/sys/devices/system/node' 
+            - '/dev:/dev'
+        container_name: trex2
+        image: 'trexbasic:20.04'

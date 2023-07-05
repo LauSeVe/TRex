@@ -1,5 +1,5 @@
 # TRex con Mininet y ONOS
-Este escenario está compuesta por una topología mininet de 4 switches y un contenedor con el generador de tráfico TRex. Este contenedor tiene dos interfaces los cuales están conectados al switch "s1".
+Este escenario está compuesta por una topología mininet de 4 switches y un contenedor con el generador de tráfico TRex. Este contenedor tiene doce interfaces los cuales están conectados 2 a 2 a los switches de la topología Mininet.
 
 ## Desplegar ONOS y Mininet
 El siguiente script despliega un contenedor con la imagen de ONOS, activa las aplicaciones necesarias para permitir el forwarding de mininet reactivo y genera una topologia con mininet.
