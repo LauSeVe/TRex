@@ -1,8 +1,8 @@
 # TRex con Ubuntu 20.04
 Este escenario se ha desplegado para probar la generación de paquetes con TRex con 2 subredes distintas para comprobar el correcto funcionamiento de ARP con el generador de trafico TRex de CISCO. 
 
-## Configuracion
-### TRex
+
+## Configuracion TRex
 
 Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es neecesario realizarlo siempre)
 ~~~
@@ -14,13 +14,13 @@ Se monta el contenedor con la imagen generada
 docker run --privileged --cap-add=ALL -v /mnt/huge:/mnt/huge -v /lib/modules:/lib/modules:ro -v /sys/bus/pci/devices:/sys/bus/pci/devices -v /sys/devices/system/node:/sys/devices/system/node -v /dev:/dev -it --name trexubuntu trexubuntu:20.04
 ~~~
 
-### Ubuntu 20.04
+## Configuracion Ubuntu 20.04
 Para desplegar un contenedor con una imagen de ubuntu 20.04.
 ~~~
 docker run --rm -it --privileged --name ubuntu --cap-add=ALL ubuntu:20.04
 ~~~
 
-### Configuración con Ubuntu
+## Conexiones
 Conexiones entre ubuntu y TRex
 ~~~
 ./conf.sh
@@ -34,7 +34,7 @@ apt install net-tools iputils-ping tcpdump iproute2
 Así ya se podrá hacer ifconfig y ping para comprobar los insterfaces creados.  
 
 
-### Rutas estaticas
+## Rutas estaticas
 En el Ubuntu:
 Añadir la ruta de los servidores
 ~~~
@@ -45,7 +45,7 @@ Añadir la ruta de los clientes
 ip route add 16.0.0.0/24 via 10.0.0.1
 ~~~
 
-## Prueba 
+## Prueba HTTP básica
 Para acceder al contenedor 
 ~~~
 docker exec -it trexubuntu bash
