@@ -4,9 +4,10 @@ COPY trex_cfg.yaml /etc/trex_cfg.yaml
 
 RUN apt-get update
 RUN apt-get install -y sudo gcc g++ python python3 python3-distutils zlib1g-dev wget pciutils kmod strace net-tools tcpdump iproute2 iputils-ping nano
-RUN mkdir /trex
+WORKDIR /var
 
-WORKDIR /trex
+RUN mkdir trex
+WORKDIR /var/trex
 RUN wget --no-cache --no-check-certificate https://trex-tgn.cisco.com/trex/release/v3.02.tar.gz
 RUN sudo tar -xzvf v3.02.tar.gz 
 
