@@ -40,7 +40,7 @@ Para acceder a la consola de TRex, en otro terminal realizar el siguiente comand
 ~~~
 ./trex-console
 ~~~
-Dentro de la consola se puede lanzar trafico http basico
+Dentro de la consola se puede lanzar trafico http basico.
 ~~~
 start -f astf/http_simple.py 
 ~~~
@@ -53,6 +53,7 @@ Para parar el trafico hay que ejecutar el comando
 stop
 ~~~
 
+## Comprobación
 Si se quiere comprobar el correcto funcionamiento se puede realizar un tcpdump en cualquiera de los interfaces del TRex.
 ~~~
 sudo tcpdump -i veth0 -w capture.pcap &
@@ -69,3 +70,7 @@ Si se quiere observar el tráfico con Wireshark se puede mandar copiar el ficher
 docker cp trexovs:/var/trex/v3.02/capture.pcap .
 wireshark capture.pcap
 ~~~
+
+
+## Desconfiguración del escenario 
+El script llamado "deconf.sh" se encarga borrar el contenedor que contiene el generador de tráfico TRex empleado, así como el bridge OVS generado y sus puertos. 

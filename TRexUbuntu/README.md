@@ -35,7 +35,6 @@ Así ya se podrá hacer ifconfig y ping para comprobar los insterfaces creados.
 
 
 ### Rutas estaticas
-
 En el Ubuntu:
 Añadir la ruta de los servidores
 ~~~
