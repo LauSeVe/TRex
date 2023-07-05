@@ -71,6 +71,5 @@ docker cp trexovs:/var/trex/v3.02/capture.pcap .
 wireshark capture.pcap
 ~~~
 
-
 ## Desconfiguración del escenario 
 El script llamado "deconf.sh" se encarga borrar el contenedor que contiene el generador de tráfico TRex empleado, así como el bridge OVS generado y sus puertos. 
