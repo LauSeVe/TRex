@@ -1,21 +1,68 @@
+version: '3'
 services:
-    trexbasic:
+    trex1:
         privileged: true
+        build:
+          context: ./configuration/trex1
         volumes:
-            - '/mnt/huge:/mnt/huge'
-            - '/lib/modules:/lib/modules:ro'
-            - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
-            - '/sys/devices/system/node:/sys/devices/system/node' 
-            - '/dev:/dev'
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
         container_name: trex1
-        image: trexbasic:20.04
-    trexbasic2:
+    trex2:
         privileged: true
+        build:
+          context: ./configuration/trex2
         volumes:
-            - '/mnt/huge:/mnt/huge'
-            - '/lib/modules:/lib/modules:ro'
-            - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
-            - '/sys/devices/system/node:/sys/devices/system/node' 
-            - '/dev:/dev'
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
         container_name: trex2
-        image: 'trexbasic:20.04'
+    trex3:
+        privileged: true
+        build:
+          context: ./configuration/trex3
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        container_name: trex3
+    trex4:
+        privileged: true
+        build:
+          context: ./configuration/trex4
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        container_name: trex4
+    trex5:
+        privileged: true
+        build:
+          context: ./configuration/trex5
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        container_name: trex5
+    trex6:
+        privileged: true
+        build:
+          context: ./configuration/trex6
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        container_name: trex6

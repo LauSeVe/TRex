@@ -1,5 +1,4 @@
 # TRex con Mininet y ONOS
-TODO
 
 Este escenario está compuesta por una topología mininet de 4 switches y seis contenedores con el generador de tráfico TRex. Estos contenedores tiene dos interfaces los cuales están conectados a los switches de la topología. 
 
@@ -11,11 +10,11 @@ sudo ./onos_docker.sh
 Se preguntará por la contraseña del usuario "karaf" para poder acceder a la consola de configuración de onos para activar las aplicaciones. karaf/karaf.
 
 ## TRex
-Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre).
+Se construyen los seis contenedores con TRex con ayuda de docker-compose.
 ~~~
-docker build -t trexbasic:20.04 .
+docker-compose up --build 
 ~~~
-La imagen del contenedor es igual que la empleada en el escenario "Basic". 
+La imagen que construye los contenedores es igual que la empleada en el escenario "Basic" pero con un cambio en el CMD el cual es necesario para que se deplieguen todos los contenedores. Y tambien incluye un comando para modificar el prompt del contenedor para que aparezca su nombre en vez de su identificador. 
 
 El siguiente script despliegan los contenedores TRex con la imagen generada y configura los enlaces necesarios. (DOCKER COMPOSE) 
 ~~~
@@ -23,9 +22,9 @@ sudo ./conf.sh
 ~~~
 
 ## Servicio TRex
-Para acceder al contenedor.
+Para acceder al contenedor trex1 el comando necesario sería el siguiente.
 ~~~
-docker exec -it trexbasic bash
+docker exec -it trex1 bash
 ~~~
 
 Se habilita el servicio del TRex para esto hay que ejecutar el siguiente comando dentro del contenedor TRex.
@@ -65,13 +64,17 @@ tcpdump -r capture.pcap
 
 Si se quiere observar el tráfico con Wireshark se puede mandar copiar el fichero en local y desde ahí abrirlo con Wireshark.
 ~~~
-docker cp trexbasic:/var/trex/v3.02/capture.pcap .
+docker cp trex1:/var/trex/v3.02/capture.pcap .
 wireshark capture.pcap
 ~~~
 
 ## Desconfiguración del escenario 
 La atopología mininet se puede eliminar escribiendo "exit" dentro de su terminal.
-Para eliminar los contenedores:
+Para eliminar el contenedor con ONOS:
 ~~~
-docker rm -f onos trexbasic 
+docker rm -f onos 
+~~~
+Para eliminar los contenedores con TRex se puede emplear también docker compose.
+~~~
+docker-compose down 
 ~~~
