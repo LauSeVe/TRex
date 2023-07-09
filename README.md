@@ -13,7 +13,7 @@ En esta carpeta se encuentran varios escenarios en los que se despliega TRex a d
 En ella se verá el despliegue del servicio de Trex en un host generado desde mininet, así como su despliegue en un contenedor unico con varios interfaces o el despliegue de varios contenedores Trex. 
 La architectura Mininet básica a la que se conectaran varios generadores de tráfico TRex es la siguiente.
 <p align="center">
-  <img src="./img/TRex-Mininet.png">
+  <img src="./img/TREX-Mininet.png">
 </p> 
 
 ## TRexUbuntu
@@ -21,5 +21,5 @@ En esta carpeta se podrá encontrar un escenario en el que se desplega TRex cone
 Este escenario se ha generado para comprobar el correcto funcionamiento de TRex a través de varias subredes. 
 El escenario descrito es el siguiente.
 <p align="center">
-  <img src="./img/TRex-Ubuntu.png">
+  <img src="./img/TREX-Ubuntu.png">
 </p>

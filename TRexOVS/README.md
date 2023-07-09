@@ -3,6 +3,7 @@ El escenario que se va a desplegar es el siguiente.
 <p align="center">
   <img src="../img/TREX-OVS.png">
 </p>
+
 ## TRex
 Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre)
 ~~~
