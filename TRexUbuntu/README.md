@@ -1,6 +1,9 @@
 # TRex con Ubuntu 20.04
 Este escenario se ha desplegado para probar la generación de paquetes con TRex con 2 subredes distintas para comprobar el correcto funcionamiento de ARP con el generador de trafico TRex de CISCO. 
-
+El escenario que se va a desplegar es el siguiente.
+<p align="center">
+  <img src="../img/TREX-Ubuntu.png">
+</p>
 
 ## Configuracion TRex
 
