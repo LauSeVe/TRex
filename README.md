@@ -4,6 +4,10 @@ En este repositorio se pueden ver varios escenarios en los que se utiliza el gen
 ## TRexOVS
 En esta carpeta se puede encontrar un escenario el cual despliega un contenedor TRex v3.02 conectado a un switch OVS.
 ![TRex with OVS](./img/TREX-OVS.png)
+Prueba
+<p align="center">
+  <img src="./img/TREX-OVS.png" alt="Contenedor TRex conectado a un OVS">
+</p>
 
 ## TRexMininet
 En esta carpeta se encuentran varios escenarios en los que se despliega TRex a distintas topologias mininet SDN con ONOS como controlador. 
