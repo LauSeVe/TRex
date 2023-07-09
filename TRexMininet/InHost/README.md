@@ -1,4 +1,8 @@
-# TRex como host de Mininet y ONOS
+# TRex como host de Mininet y ONOS (InHost)
+El escenario es el siguiente.
+<p align="center">
+  <img src="../../img/TREX-MininetInHost.png">
+</p>
 
 ## Desplegar ONOS y Mininet
 Se despliega un contenedor con la imagen de ONOS.

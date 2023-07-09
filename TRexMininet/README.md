@@ -23,12 +23,14 @@ El escenario es el siguiente.
 
 ## Complex
 En este escenario el contenedor TRex se ha conectado a todos los switches dos a dos para hacer pruebas de todo el tráfico.
+Siendo el escenario.
 <p align="center">
   <img src="../img/TREX-MininetComplex.png">
 </p>
 
 ## VariousTRex 
-
-TODO
-
 En este escenario se pueden seis contenedores TRex, uno para cada una de las conexiones entre switches. 
+El escenario es el siguiente. 
+<p align="center">
+  <img src="../img/TREX-variousTRex.png">
+</p>
