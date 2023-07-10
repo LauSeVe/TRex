@@ -1,0 +1,87 @@
+version: '3'
+services:
+    trex1:
+        privileged: true
+        build:
+          context: ./
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        environment:
+          - IPveth1= 10.0.0.1
+          - IPveth2= 10.0.0.2
+        container_name: trex1
+    trex2:
+        privileged: true
+        build:
+          context: ./
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        environment:
+          - IPveth1= 10.0.0.3
+          - IPveth2= 10.0.0.4
+        container_name: trex2
+    trex3:
+        privileged: true
+        build:
+          context: ./
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        environment:
+          - IPveth1= 10.0.0.5
+          - IPveth2= 10.0.0.6
+        container_name: trex3
+    trex4:
+        privileged: true
+        build:
+          context: ./
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        environment:
+          - IPveth1= 10.0.0.7
+          - IPveth2= 10.0.0.8
+        container_name: trex4
+    trex5:
+        privileged: true
+        build:
+          context: ./
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        environment:
+          - IPveth1= 10.0.0.9
+          - IPveth2= 10.0.0.10
+        container_name: trex5
+    trex6:
+        privileged: true
+        build:
+          context: ./
+        volumes:
+          - '/mnt/huge:/mnt/huge'
+          - '/lib/modules:/lib/modules:ro'
+          - '/sys/bus/pci/devices:/sys/bus/pci/devices' 
+          - '/sys/devices/system/node:/sys/devices/system/node' 
+          - '/dev:/dev'
+        environment:
+          - IPveth1= 10.0.0.11
+          - IPveth2= 10.0.0.12
+        container_name: trex6
+        
