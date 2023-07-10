@@ -2,7 +2,7 @@
 Este escenario está compuesta por una topología mininet de 4 switches y seis contenedores con el generador de tráfico TRex. Estos contenedores tiene dos interfaces los cuales están conectados a los switches de la topología. 
 El escenario es el siguiente.
 <p align="center">
-  <img src="../../img/TREX-VariousTRex.png" >
+  <img src="../../../img/TREX-VariousTRex.png" >
 </p>
 
 ## Desplegar ONOS y Mininet
