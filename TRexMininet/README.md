@@ -32,5 +32,5 @@ Siendo el escenario.
 En este escenario se pueden seis contenedores TRex, uno para cada una de las conexiones entre switches. 
 El escenario es el siguiente. 
 <p align="center">
-  <img src="../img/TREX-variousTRex.png">
+  <img src="../img/TREX-VariousTRex.png">
 </p>
