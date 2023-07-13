@@ -1,8 +1,8 @@
 # TRex 
-En este repositorio se pueden ver varios escenarios en los que se utiliza el generador de tráfico TRex de CISCO.
+En este repositorio se pueden ver varios escenarios en los que se utiliza el generador de tráfico TRex v2.97 de CISCO.
 
 ## TRexOVS
-En esta carpeta se puede encontrar un escenario el cual despliega un contenedor TRex v3.02 conectado a un switch OVS.
+En esta carpeta se puede encontrar un escenario el cual despliega un contenedor TRex v2.97 conectado a un switch OVS.
 Este escenario se puede ver en la siguiente figura.
 <p align="center">
   <img src="./img/TREX-OVS.png">

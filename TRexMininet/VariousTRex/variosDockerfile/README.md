@@ -67,7 +67,7 @@ tcpdump -r capture.pcap
 
 Si se quiere observar el tráfico con Wireshark se puede mandar copiar el fichero en local y desde ahí abrirlo con Wireshark.
 ~~~
-docker cp trex1:/var/trex/v3.02/capture.pcap .
+docker cp trex1:/var/trex/v2.97/capture.pcap .
 wireshark capture.pcap
 ~~~
 

@@ -2,8 +2,8 @@
 
 ## TREX 
 rm /etc/trex_cfg.yaml
-rm -r v3.02
-rm v3.02.tar.gz 
+rm -r v2.97
+rm v2.97.tar.gz 
 
 ## ONOS
 docker rm -f onos

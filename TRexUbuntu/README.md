@@ -7,7 +7,7 @@ El escenario que se va a desplegar es el siguiente.
 
 ## Configuracion TRex
 
-Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es neecesario realizarlo siempre)
+Se construye la imagen de TRex 2.97 sobre un Ubuntu 20.04. (Este paso no es neecesario realizarlo siempre)
 ~~~
 docker build -t trexubuntu:20.04 .
 ~~~
@@ -85,6 +85,6 @@ tcpdump -r capture.pcap
 
 Si se quiere observar el tráfico con Wireshark se puede mandar copiar el fichero en local y desde ahí abrirlo con Wireshark.
 ~~~
-docker cp trexubuntu:/var/trex/v3.02/capture.pcap .
+docker cp trexubuntu:/var/trex/v2.97/capture.pcap .
 wireshark capture.pcap
 ~~~

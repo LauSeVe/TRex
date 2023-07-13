@@ -8,9 +8,9 @@ WORKDIR /var
 
 RUN mkdir trex
 WORKDIR /var/trex
-RUN wget --no-cache --no-check-certificate https://trex-tgn.cisco.com/trex/release/v3.02.tar.gz
-RUN sudo tar -xzvf v3.02.tar.gz 
+RUN wget --no-cache --no-check-certificate https://trex-tgn.cisco.com/trex/release/v2.97.tar.gz
+RUN sudo tar -xzvf v2.97.tar.gz 
 
-WORKDIR /trex/v3.02
+WORKDIR /trex/v2.97
 
 CMD ["/bin/bash"]

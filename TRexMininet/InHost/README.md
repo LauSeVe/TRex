@@ -24,7 +24,7 @@ xterm trex
 ~~~
 El siguiente comando habilita el servicio mininet y empieza a lanzar el trafico definido en el fichero llamado "dns.yaml" disponible en la carpeta cap2.
 ~~~
-cd v3.02
+cd v2.97
 ./t-rex-64 -f cap2/dns.yaml 
 ~~~
 

@@ -5,8 +5,8 @@ apt-get install -y sudo gcc g++ python zlib1g-dev wget tcpdump pciutils kmod str
 
 ## TREX
 cp trex_cfg.yaml /etc/trex_cfg.yaml
-wget --no-cache --no-check-certificate https://trex-tgn.cisco.com/trex/release/v3.02.tar.gz
-tar -xzvf v3.02.tar.gz 
+wget --no-cache --no-check-certificate https://trex-tgn.cisco.com/trex/release/v2.97.tar.gz
+tar -xzvf v2.97.tar.gz 
 
 ## ONOS
 docker run -t -d -p 8181:8181 -p 8101:8101 -p 5005:5005 -p 830:830 --name onos onosproject/onos

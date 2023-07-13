@@ -13,7 +13,7 @@ sudo ./onos_docker.sh
 Se preguntará por la contraseña del usuario "karaf" para poder acceder a la consola de configuración de onos para activar las aplicaciones. karaf/karaf.
 
 ## TRex
-Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre).
+Se construye la imagen de TRex 2.97 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre).
 ~~~
 docker build -t trexbasic:20.04 .
 ~~~
@@ -72,7 +72,7 @@ tcpdump -r capture.pcap
 
 Si se quiere observar el tráfico con Wireshark se puede mandar copiar el fichero en local y desde ahí abrirlo con Wireshark.
 ~~~
-docker cp trexbasic:/var/trex/v3.02/capture.pcap .
+docker cp trexbasic:/var/trex/v2.97/capture.pcap .
 wireshark capture.pcap
 ~~~
 
