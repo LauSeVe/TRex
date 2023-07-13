@@ -5,7 +5,7 @@ El escenario que se va a desplegar es el siguiente.
 </p>
 
 ## TRex
-Se construye la imagen de TRex 3.02 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre)
+Se construye la imagen de TRex 2.97 sobre un Ubuntu 20.04. (Este paso no es necesario realizarlo siempre)
 ~~~
 docker build -t trexovs:20.04 .
 ~~~
@@ -57,6 +57,11 @@ Para parar el trafico hay que ejecutar el comando
 stop
 ~~~
 
+PRUEBAAA
+~~~
+./t-rex-64 --astf -f astf/http_simple.py
+~~~
+
 ## Comprobación
 Si se quiere comprobar el correcto funcionamiento se puede realizar un tcpdump en cualquiera de los interfaces del TRex.
 ~~~
@@ -71,7 +76,7 @@ tcpdump -r capture.pcap
 
 Si se quiere observar el tráfico con Wireshark se puede mandar copiar el fichero en local y desde ahí abrirlo con Wireshark.
 ~~~
-docker cp trexovs:/var/trex/v3.02/capture.pcap .
+docker cp trexovs:/var/trex/v2.97/capture.pcap .
 wireshark capture.pcap
 ~~~
 
