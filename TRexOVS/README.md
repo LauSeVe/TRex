@@ -35,11 +35,10 @@ Para acceder al contenedor.
 docker exec -it trexovs bash
 ~~~
 
-Se habilita el servicio del TRex para esto hay que ejecutar el siguiente comando dentro del contenedor TRex.
+Para habilitar el servicio del TRex en modo interactivo, hay que ejecutar el siguiente comando dentro del contenedor TRex.
 ~~~
 ./t-rex-64 -i --astf
 ~~~
-
 Para acceder a la consola de TRex, en otro terminal realizar el siguiente comando dentro del contenedor.
 ~~~
 ./trex-console
@@ -57,11 +56,11 @@ Para parar el trafico hay que ejecutar el comando
 stop
 ~~~
 
-PRUEBAAA
+Si se quiere habilitar el servicio y mandar el tráfico en una sola linea de comandos se puede realizar el siguiente comando.
 ~~~
 ./t-rex-64 --astf -f astf/http_simple.py
 ~~~
-
+Este no emplea el modo interactivo del TRex.
 ## Comprobación
 Si se quiere comprobar el correcto funcionamiento se puede realizar un tcpdump en cualquiera de los interfaces del TRex.
 ~~~
